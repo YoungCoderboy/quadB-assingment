@@ -1,11 +1,8 @@
-import React, { useState, useEffect } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import axios, { all } from 'axios'
-import Loader from './component/Loader'
-import Stars from './component/Stars'
-import Lp from './Lp'
-import Info from './Info'
-import { MyContextProvider } from './MyContext'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Lp from "./Lp";
+import Info from "./Info";
+import { MyContextProvider } from "./MyContext";
 const App = () => {
   return (
     <div className="App">
@@ -18,6 +15,6 @@ const App = () => {
         </MyContextProvider>
       </Router>
     </div>
-  )
-}
-export default App
+  );
+};
+export default App;

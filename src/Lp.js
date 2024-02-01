@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
-import { BsStarFill, BsStarHalf, BsStar } from "react-icons/bs";
+import { BsStarFill, BsStar } from "react-icons/bs";
 import axios, { all } from "axios";
-import Loader from "./component/Loader";
-import Stars from "./component/Stars";
+
 import Info from "./Info";
 import { useMyContext } from "./MyContext";
 
