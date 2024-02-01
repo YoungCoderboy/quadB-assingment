@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
+import { Route, Link, Routes } from "react-router-dom";
 import { BsStarFill, BsStar } from "react-icons/bs";
 import axios from "axios";
 
@@ -12,7 +12,7 @@ function Lp() {
 
   const [genres, setGenres] = useState(["All"]);
   const [currGen, setCurrGen] = useState("All");
-  const { globalState, setGlobalState } = useMyContext();
+  const { setGlobalState } = useMyContext();
 
   const getFeeds = async () => {
     try {
@@ -29,7 +29,7 @@ function Lp() {
 
   const findData = (id) => {
     const data = Data.filter((ele) => {
-      return ele.show.id == id;
+      return ele.show.id === id;
     });
 
     setGlobalState(data[0]);
@@ -103,7 +103,7 @@ function Lp() {
           Status :
         </span>
         <select
-          className="ml-4 px-2 py-1 border rounded border-2 border-black"
+          className="ml-4 px-2 py-1 rounded border-2 border-black"
           value={status}
           placeholder="Status"
           onChange={(e) => setStatus(e.target.value)}
@@ -119,7 +119,7 @@ function Lp() {
           Genre :
         </span>
         <select
-          className="ml-4 px-2 py-1 border rounded border-2 border-black"
+          className="ml-4 px-2 py-1 rounded border-2 border-black"
           value={currGen}
           onChange={(e) => setCurrGen(e.target.value)}
         >

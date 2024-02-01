@@ -2,9 +2,8 @@ import React from "react";
 import { useMyContext } from "./MyContext";
 
 const Info = ({ ...props }) => {
-  const { globalState, setGlobalState } = useMyContext();
+  const { globalState } = useMyContext();
 
-  console.log(globalState);
   //     const [data, setData] = useState([]);
 
   //   useEffect(() => {
