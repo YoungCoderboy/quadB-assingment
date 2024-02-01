@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import { BsStarFill, BsStar } from "react-icons/bs";
-import axios, { all } from "axios";
+import axios from "axios";
 
 import Info from "./Info";
 import { useMyContext } from "./MyContext";
@@ -9,7 +9,7 @@ import { useMyContext } from "./MyContext";
 function Lp() {
   const url = "https://api.tvmaze.com/search/shows?q=all";
   const [Data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
+
   const [genres, setGenres] = useState(["All"]);
   const [currGen, setCurrGen] = useState("All");
   const { globalState, setGlobalState } = useMyContext();
@@ -22,9 +22,7 @@ function Lp() {
       setData(result);
       // Data.slice(20);
       // console.log(Data);
-      setLoading(false);
     } catch (error) {
-      setLoading(true);
       console.error(error);
     }
   };
