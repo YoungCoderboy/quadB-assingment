@@ -1,0 +1,33 @@
+[
+    {
+      "image": "url_to_image1",
+      "name": "Show 1",
+      "rating": 4.5,
+      "language": "English",
+      "genre": "Drama",
+      "status": "Ongoing",
+      "summary": "A great show...",
+      "country": "USA",
+      "runtime": "60 minutes",
+      "startDate": "2024-02-01",
+      "endDate": "2024-05-30",
+      "daysAndTiming": "Mondays at 8 PM",
+      "network": "ABC"
+    },
+    {
+      "image": "url_to_image2",
+      "name": "Show 2",
+      "rating": 4.2,
+      "language": "Spanish",
+      "genre": "Comedy",
+      "status": "Finished",
+      "summary": "A funny show...",
+      "country": "Spain",
+      "runtime": "45 minutes",
+      "startDate": "2024-03-15",
+      "endDate": "2024-07-10",
+      "daysAndTiming": "Wednesdays at 9 PM",
+      "network": "Netflix"
+    }
+  ]
+  
